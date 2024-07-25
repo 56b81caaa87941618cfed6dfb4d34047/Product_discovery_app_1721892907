@@ -2,7 +2,20 @@
 */
 Vue.component("simple_footer_component_1721892909", {
     template: `
-    <footer id="footer-section" class="flex-1 bg-white dark:bg-gray-800">
+    <div>
+        <nav class="bg-white shadow dark:bg-gray-800">
+            <div class="container flex items-center justify-between p-6 mx-auto">
+                <div>
+                    <a href="#" class="text-2xl font-bold text-gray-800 dark:text-white">ProductScout</a>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-700 dark:text-white hover:text-gray-900">Home</a>
+                    <a href="#" class="text-gray-700 dark:text-white hover:text-gray-900">About</a>
+                    <a href="#" class="text-gray-700 dark:text-white hover:text-gray-900">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+        <footer id="footer-section" class="flex-1 bg-white dark:bg-gray-800">
             <div id="footer-container" class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
                 <hr id="footer-divider" class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
                 <div id="footer-content" class="text-center">
@@ -20,6 +33,8 @@ Vue.component("simple_footer_component_1721892909", {
                 </div>
             </div>
         </footer> 
+    </div>
+    `,
     `,
     data() {
         return {
